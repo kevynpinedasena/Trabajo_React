@@ -1,0 +1,367 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: 0.5s;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedorHeader{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 200px;
+}
+
+.logos{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.styleH1{
+  color: rgb(55, 61, 61);
+  font-size: 35px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.image{
+  width: 220px;
+  height: 120px;
+  transition: 3s;
+}
+
+.image:hover{
+  width: 225px;
+  height: 125px;
+  transform: rotate(1440deg);
+  transition: 3s;
+}
+
+.navA{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navA a{
+  text-decoration: none;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(55, 61, 61);
+  border: solid 2px ;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgb(63, 59, 59);
+  transition: 0.5s;
+}
+
+.navA a:hover{
+  font-size: 38px;
+  background-color: rgb(78, 78, 78);
+  color: white;
+  transition: 0.5s;
+}
+
+.hr{
+  width: 98%;
+  height: 1px;
+  background-color: black;
+}
+
+.about{
+  color: rgb(18, 194, 135);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  text-align: center;
+}
+
+.contac{
+  color: rgb(199, 65, 65);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  text-align: center;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.iconos{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.styleName{
+  color: rgb(55, 61, 61);
+  font-size: 35px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.ContenedorBtn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/*estilo de los botones del contador*/
+.contBtn{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.btnMas{
+  width: 120px;
+  height: 45px;
+  font-size: 30px;
+  border: solid 1px rgba(0, 0, 0, 0.493);
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(88, 252, 156);
+  box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.637);
+}
+
+.btnMenos{
+  width: 145px;
+  height: 45px;
+  font-size: 30px;
+  border: solid 1px rgba(0, 0, 0, 0.493);
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(241, 97, 78);
+  box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.637);
+}
+
+.btnRestaurar{
+  width: 200px;
+  height: 45px;
+  font-size: 30px;
+  border: solid 1px rgba(0, 0, 0, 0.493);
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(223, 250, 68);
+  box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.493);
+}
+
+.res{
+  width: auto;
+  height: auto;
+  font-size: 80px;
+  color: rgb(0, 0, 0);
+}
+
+/*para que le footer se quede abajo miestras uno mete el contenido para que el se organice*/
+/* .containerFoo{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+} */
+
+/*Switch*/
+
+.oscu{
+  display: flex;
+  justify-content: end;
+  padding: 20px 20px;
+  width: 50px;
+}
+
+.lbl{
+  display: inline-block;
+  width: 65px;
+  height: 33px;
+  background: #f8f5f5;
+  border-radius: 100px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+  border: solid 1px #000;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.582);
+}
+
+
+.lbl::after{
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(41, 39, 40);
+  border-radius: 100px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: 0.5s;
+}
+
+#switch:checked + .lbl::after{
+  left: 36px;
+}
+
+
+#switch:checked + .lbl{
+  background: rgba(39, 40, 43, 0.87);
+}
+
+#switch{
+  display: none;
+}
+
+body.color{
+  transition: 1.5s;
+  background-color: rgba(17, 26, 46, 0.904);
+}
+
+body.color .navA a{
+  transition: 1.5s;
+  background-color: #f8f5f5;
+}
+
+body.color .styleH1{
+  transition: 1.5s;
+  color: #f8f5f5;
+}
+
+body.color .image{
+  transition: 1.5s;
+  background-color: #f8f5f5;
+}
+
+body.color .styleName{
+  transition: 1.5s;
+  color: #f8f5f5;
+}
+
+body.color .hr{
+  transition: 1.5s;
+  background-color: #f8f5f5;
+}
+
+body.color .lbl::after{
+  background-color: #f8f5f5;
+}
+
+body.color .res{
+  color: #f8f5f5;
+}
+
+.light-mode{
+  background-color: white;
+}
+
+.dark-mode{
+  background-color: #000;
+}
+
+.imagenSpiderman{
+  width: 500px;
+  height: 300px;
+  filter: brightness(20%);
+}
+
+.luz{
+  filter: none;
+}
+
+/*estilo de las cartas de rick*/
+.containerFoo{
+  margin-top: 50px;
+}
+
+.titleRick{
+  color: rgb(67, 201, 112);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  text-align: center;
+}
+
+.contInput{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputName{
+  width: 70%;
+  height: 41px;
+  border-radius: 5px;
+  border: none;
+  font-size: 22px;
+  background-color: rgba(46, 44, 44, 0.363);
+  box-shadow: 2px 3px 4px 2px rgba(0, 0, 0, 0.596);
+}
+.inputName:hover{
+  background-color: rgba(41, 37, 37, 0.712);
+}
+
+.row{
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  margin-top: 20px;
+}
+
+.card{
+  width: 325px;
+  border-radius: 30px;
+  margin-top: 30px;
+  margin-left: 15px;
+  box-shadow: 1px 3px 6px 6px rgba(0, 0, 0, 0.61);
+  background-color: white;
+  transition: 0.4s;
+}
+.card:hover{
+  width: 335px;
+  transition: 0.5s;
+}
+
+
+.imagenPersonaje{
+  width: 100%;
+  border-radius: 30px;
+}
+
+.hrRik{
+  width: 90%;
+  height: 1px;
+  background-color: rgba(46, 43, 43, 0.596);
+}
+
+.tituloName{
+  color: rgb(46, 44, 44);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+  margin-left: 15px;
+}
+
+.ubicacion{
+  color: rgb(46, 44, 44);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  margin-left: 15px;
+}
