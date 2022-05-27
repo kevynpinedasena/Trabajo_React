@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Personajes = ( { personaje } ) => {
+export const Personajes = ( { personaje = [] } ) => {
   return (
     <>
 
@@ -12,7 +12,7 @@ export const Personajes = ( { personaje } ) => {
                     <div className='cartaBody'>
                         <h2 className='tituloName'>{item.name}</h2>
                         <hr className='hrRik'/>
-                        <h3 className='ubicacion'>{item.location.name}</h3>
+                        <h3 className='ubicacion'>Ubicacion: {item.location.name}</h3>
                     </div>
                 </div>
             ))

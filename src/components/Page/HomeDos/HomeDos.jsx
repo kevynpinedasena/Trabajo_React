@@ -10,6 +10,7 @@ export const HomeDos = () => {
   const [caracter, setCaracter] = useState([]); 
 
   const fetchRick = (url) => {
+    console.log(url);
     fetch(url)
     .then(response => response.json())
     .then(data => setCaracter(data.results))
