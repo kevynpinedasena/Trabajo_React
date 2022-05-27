@@ -54,7 +54,7 @@ export const HomeDos = () => {
           styles='inputName'
           tipo='text'
           descrip='Ingrese el Nombre del Personaje'
-          event={(e) => fKeyPress(e)}/
+          event={fKeyPress}/
         >
 
         <div className='contenedorRick'>
