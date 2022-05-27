@@ -6,8 +6,8 @@ export const Personajes = ( { personaje = [] } ) => {
 
     <div className='row'>
         {
-            personaje.map((item, index) => (
-                <div key={index} className='card'>
+            personaje.map((item) => (
+                <div className='card'>
                     <img src={item.image} alt="" className='imagenPersonaje'/>
                     <div className='cartaBody'>
                         <h2 className='tituloName'>{item.name}</h2>
