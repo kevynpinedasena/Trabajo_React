@@ -50,7 +50,12 @@ export const HomeDos = () => {
     <>
         <h1 className='titleRick'>Rick & Morty</h1>
 
-        <BuscarInput styles='inputName' tipo='text' descrip='Ingrese el Nombre del Personaje' event={(e) => fKeyPress(e)}/>
+        <BuscarInput
+          styles='inputName'
+          tipo='text'
+          descrip='Ingrese el Nombre del Personaje'
+          event={(e) => fKeyPress(e)}/
+        >
 
         <div className='contenedorRick'>
           <Personajes personaje={caracter}/>
