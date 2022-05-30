@@ -2,10 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { BuscarInput } from '../../UI/BuscarInput/BuscarInput';
 import { Personajes } from '../../UI/Personajes/Personajes';
 
-export const HomeDos = () => {
+export const ApiRick = () => {
 
   const URL = 'https://rickandmortyapi.com/api/character';
-  // const input = document.getElementById('contInput');
 
   const [caracter, setCaracter] = useState([]);
 
@@ -17,17 +16,6 @@ export const HomeDos = () => {
     }
   }
 
-  // const fetchRick = (url) => {
-  //   console.log(url);
-  //   fetch(url)
-  //   .then(response => response.json())
-  //   .then(data => setCaracter(data.results))
-  //   .catch(error => console.log(error))
-  // };
-  
-  // useEffect(() => {
-  //   fetchRick(URL);
-  // }, [])
 
   useEffect(() => {
     let inputt = document.querySelector('.inputName')

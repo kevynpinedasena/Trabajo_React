@@ -6,7 +6,7 @@ export const NavHome = () => {
   return (
     <>
         <nav className='navA'>
-            <Ancla style='ancla' references='./home' textAncla='HomeDos' />
+            <Ancla style='ancla' references='./ApiRick' textAncla='ApiRick' />
             <Ancla style='ancla' references='./aboutUS' textAncla='AboutUS' />
             <Ancla style='ancla' references='./contactUS' textAncla='ContactUS' />
             <Ancla style='ancla' references='./contador' textAncla='Contador' />
