@@ -338,6 +338,7 @@ body.color .cardForm{
   display: grid;
   grid-template-columns: repeat(4, 2fr);
   margin-top: 40px;
+  gap: 25px;
 }
 
 .card{
@@ -393,7 +394,7 @@ body.color .cardForm{
   justify-content: center;
   flex-direction: column;
   width: 60%;
-  height: 800px;
+  height: 1000px;
   border: solid 1px rgba(0, 0, 0, 0.527);
   box-shadow: 1px 1px 6px 5px rgba(0, 0, 0, 0.61);
   border-radius: 5px;
@@ -404,12 +405,12 @@ body.color .cardForm{
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 .titleForm{
   text-align: center;
-  font-size: 50px;
+  font-size: 60px;
   font-family: 'Times New Roman', Times, serif;
   color: rgb(216, 65, 65);
   margin-top: 0px;
