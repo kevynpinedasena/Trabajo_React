@@ -426,6 +426,8 @@ label{
   height: 40px;
   border-radius: 5px;
   border: solid 1px rgba(0, 0, 0, 0.575);
+  font-size: 22px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .formMail input:hover{

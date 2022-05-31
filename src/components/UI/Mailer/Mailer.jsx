@@ -1,5 +1,7 @@
 import React from 'react';
 import emailjs from '@emailjs/browser';
+import { BuscarInput } from '../BuscarInput/BuscarInput';
+import { ButtonUI } from '../ButtonUI/ButtonUI';
 
 export const Mailer = () => {
 
@@ -9,6 +11,7 @@ export const Mailer = () => {
 
         emailjs.sendForm('service_vns31lu', 'template_gv7393n', event.target, 'iI994OtRimTpVw18x')
         .then(response => {
+            console.log(response);
             if (response.status === 200) {
                 alert('Envio con exito!')
                 // Swal.fire({
@@ -34,18 +37,18 @@ export const Mailer = () => {
                 <form className='formMail' onSubmit={sendEmail}>
 
                     <label>Name</label>
-                    <input type="text" name='user_name' required/>
+                    <BuscarInput tipo="text" nameId='user_name' requerido='true'/>
                     <hr />
 
                     <label>Email</label>
-                    <input type="text" name='user_email' required/>
+                    <BuscarInput tipo='text' nameId='user_email' requerido='true'/>
                     <hr />
 
                     <label>Message</label>
                     <textarea name="user_message" id="" cols="30" rows="10"></textarea>
                     <hr />
 
-                    <button className='botonEmail'>Send</button>
+                    <ButtonUI style='botonEmail' textBotton='Send' />
                 </form>
             </div>
             {/* <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> */}

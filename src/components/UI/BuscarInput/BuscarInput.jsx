@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const BuscarInput = ( {styles, event, descrip, tipo} ) => {
+export const BuscarInput = ( {styles, event, descrip, tipo, requerido, nameId} ) => {
   return (
     <div className='conteneInputt'>
-        <input id='contInput' className={styles} onKeyDown={event} placeholder={descrip} type={tipo} />
+        <input id='contInput' className={styles} onKeyDown={event} placeholder={descrip} type={tipo} required={requerido} name={nameId}/>
     </div>
   )
 }
