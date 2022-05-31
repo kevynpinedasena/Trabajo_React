@@ -453,7 +453,7 @@ label{
   height: 45px;
   font-size: 25px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  border: none;
+  border: solid 1px rgb(57, 116, 226);
   background-color: rgb(26, 119, 224);
   cursor: pointer;
   border-radius: 6px;
@@ -461,9 +461,7 @@ label{
 }
 
 .botonEmail:hover{
-  width: 82%;
-  height: 50px;
-  font-size: 30px;
+  font-size: 32px;
   background-color: rgb(0, 78, 167);
   transition: 0.4s;
 }
