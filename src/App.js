@@ -1,4 +1,3 @@
-import { AboutUS } from "./components/Page/AboutUS/AboutUS";
 import { ContactUS } from "./components/Page/ContactUS/ContactUS";
 import { ApiRick } from "./components/Page/ApiRick/ApiRick";
 import { Route, Routes } from "react-router-dom";
@@ -7,6 +6,7 @@ import { Home } from "./components/Page/Home/Home";
 import { FooterHome } from "./components/Layouts/FooterHome/FooterHome";
 import { Principal } from "./components/Page/Principal/Principal";
 import { Contador } from "./components/Page/Contador/Contador";
+import { ApiTenor } from "./components/Page/ApiTenor/ApiTenor";
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Principal />}></Route>
           <Route path="/ApiRick" element={<ApiRick/>}></Route>
-          <Route path="/aboutUS" element={<AboutUS />}></Route>
+          <Route path="/apiTenor" element={<ApiTenor/>}></Route>
           <Route path="/contactUS" element={<ContactUS />}></Route>
           <Route path="/contador" element={<Contador/>}></Route>
           <Route path="*" element={<NotFound />}></Route>

@@ -7,7 +7,7 @@ export const NavHome = () => {
     <>
         <nav className='navA'>
             <Ancla style='ancla' references='./ApiRick' textAncla='ApiRick' />
-            <Ancla style='ancla' references='./aboutUS' textAncla='AboutUS' />
+            <Ancla style='ancla' references='./apiTenor' textAncla='ApiTenor' />
             <Ancla style='ancla' references='./contactUS' textAncla='ContactUS' />
             <Ancla style='ancla' references='./contador' textAncla='Contador' />
 
