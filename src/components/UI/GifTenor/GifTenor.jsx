@@ -7,7 +7,7 @@ export const GifTenor = ( { gif = [] } ) => {
             {
                 gif.map( (item) => (
                   <div className='cartTenor'>
-                    <img src={item.url} alt="" className='imgTenor' />
+                    <img src={item.media[0].mediumgif.url} alt="gifTen" className='imgTenor' />
                   </div>
                 ))
             }
