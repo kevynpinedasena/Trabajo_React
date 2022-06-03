@@ -6,12 +6,11 @@ export const ApiTenor = () => {
 
   const [cartGif , setCartGif] = useState([]);
 
-  
   const search = () => {
     const URL = "https://g.tenor.com/v1/trending?"
     const key = "6G30F53H2FCD";
     const limit = "&limit=16";
-    
+
     let search = `${URL}&key=${key}${limit}`;
 
     fetch(search)
