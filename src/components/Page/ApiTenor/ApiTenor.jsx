@@ -54,8 +54,6 @@ export const ApiTenor = () => {
         <div className='conteneTenor'>
           <GifTenor gif={cartGif}/>
         </div>
-
-
     </>
   )
 }
