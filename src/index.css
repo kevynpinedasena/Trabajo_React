@@ -328,23 +328,19 @@ body.color .cardForm{
   display: grid;
   grid-template-columns: repeat(4, 2fr);
   margin-top: 40px;
-  gap: 25px;
+  gap: 40px;
+  padding: 0px 55px;
 }
 
 .card{
-  width: 325px;
+  width: 290px;
   border-radius: 30px;
-  margin-top: 75px;
-  margin-left: 60px;
+  margin-top: 25px;
   box-shadow: 1px 3px 6px 6px rgba(0, 0, 0, 0.61);
   background-color: white;
-  transition: 0.4s;
   cursor: pointer;
 }
-.card:hover{
-  width: 335px;
-  transition: 0.5s;
-}
+
 
 
 .imagenPersonaje{
